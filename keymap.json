@@ -1,0 +1,48 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "cmd-j": "terminal_panel::Toggle",
+    },
+  },
+
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-b": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "bindings": {
+      "cmd-0": "git_panel::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "alt-cmd-c": "agent::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "cmd-9": "git_graph::Open"
+    }
+  },
+  {
+    "context": "GitPanel",
+    "bindings": {
+      "cmd-d": "git::Diff"
+    }
+  },
+  {
+    "context": "GitPanel",
+    "unbind": {
+      "ctrl-g d": "git::Diff"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# Allow tracking of specific configuration files
+!settings.json
+!keymap.json
+!tasks.json
+!.gitignore
+!themes/
+!snippets/
